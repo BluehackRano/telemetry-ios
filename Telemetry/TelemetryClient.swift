@@ -35,6 +35,7 @@ class TelemetryClient: NSObject {
         request.httpShouldHandleCookies = false
 
         print("\(request.httpMethod ?? "(GET)") \(request.debugDescription)")
+        print("RANO EDITED")
 
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             DispatchQueue.main.async {
